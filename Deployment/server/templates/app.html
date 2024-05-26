@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scal=1.0">
+    <title>Benguluru House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+
+<body>
+    <form class="label" id="houseForm">
+        <div class="outer_container">
+            <div class="container">
+
+
+                <div class="container2 size_of_area">
+                    <div class="inner_container">
+
+                        <div class="input_label">
+                            <label for="area" class="area_a1">Area(sqft)</label>
+                        </div>
+                        <div class="input_label">
+                            <input type="text" class="area_a2" id="area" name="area" placeholder="Enter the area">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container2 bed">
+                    <div class="inner_container">
+                        <div class="label bed_lebel">
+                            <label for="bhk">Select the Number of bedrooms</label>
+                        </div>
+
+
+                        <div class="input_label radio_bed">
+                            <div class="inner_radio">
+                                <input type="radio" id="1" name="bhk" value="1">
+                                <label for="1" class="one">
+                                    <div>1</div>
+                                </label>
+                            </div>
+
+
+                            <div class="inner_radio">
+                                <input type="radio" id="2" name="bhk" value="2">
+                                <label for="2" class="two">
+                                    <div>2</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="3" name="bhk" value="3">
+                                <label for="3" class="three">
+                                    <div>3</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="4" name="bhk" value="4">
+                                <label for="4" class="four">
+                                    <div>4</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="5" name="bhk" value="5">
+                                <label for="5" class="five">
+                                    <div>5</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container2 bath">
+                    <div class="inner_container">
+                        <div class="label bath_label">
+                            <label for="bath">Select the Number of bathrooms</label>
+                        </div>
+
+                        <div class="input_label radio_bed">
+                            <div class="inner_radio">
+                                <input type="radio" id="1_bath" name="bath" value="1">
+                                <label for="1_bath" class="one">
+                                    <div>1</div>
+                                </label>
+                            </div>
+
+
+                            <div class="inner_radio">
+                                <input type="radio" id="2_bath" name="bath" value="2">
+                                <label for="2_bath" class="two">
+                                    <div>2</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="3_bath" name="bath" value="3">
+                                <label for="3_bath" class="three">
+                                    <div>3</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="4_bath" name="bath" value="4">
+                                <label for="4_bath" class="four">
+                                    <div>4</div>
+                                </label>
+                            </div>
+
+                            <div class="inner_radio">
+                                <input type="radio" id="5_bath" name="bath" value="5">
+                                <label for="5_bath" class="five">
+                                    <div>5</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container2 location">
+                    <div class="inner_container">
+                        <div class="label">
+                            <label for="location">Select Location</label>
+                        </div>
+
+                        <div class="selection_drop_down">
+                            <select name="location" id="location" class="option_field">
+                                <option value="" disabled="disabled" selected="selected">Choose A Location</option>
+                                <option value="whitefield">whitefield</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="btn_container">
+                <button class="find_btn" type="submit">Find</button>
+            </div>
+
+            <div class="outer_result">
+                <div class="inner_result">
+                    <h2 class="result">Result In Lacks</h2>
+                </div>
+            </div>            
+        </div>
+    </form>
+
+    <script src="{{ url_for('static', path='server_app.js') }}"></script>
+
+
+</body>
+<footer class="footer_class">
+    <h5>
+        &copy; by praveenkumar &nbsp;
+    </h5>
+    <h6>
+        2024
+    </h6>
+</footer>
+
+</html>

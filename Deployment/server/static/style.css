@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.outer_container{
+    background-image: url("house.jpg");
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 10vh 50vh 15vh 15vh;
+
+}
+
+
+.container{
+    border: 2px solid rgb(255, 214, 63);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    height: 50vh;
+    width: 50vw;
+    box-sizing: border-box;
+    display: grid;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    grid-template-areas: "area bedrooms"
+                        "bathrooms location";
+}
+
+
+.container2{
+    margin: 5px 5px 5px 5px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.inner_container{
+    display: inline-block;
+    color: rgb(255, 214, 63);
+    text-transform: capitalize;
+    font-size: larger;
+    font-family: "audiowide","sofia";
+    background: transparent;
+}
+
+
+
+.outer_result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height: 10vh;
+    width: 50vw;
+}
+
+.inner_result{
+    backdrop-filter: blur(10px);
+    height: 9vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 214, 63);
+    /* background-color: white; */
+}
+
+.result{
+    color: rgb(255, 214, 63);
+}
+
+
+
+.size_of_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    grid:area;
+
+}
+.bed{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid:bedrooms;
+}
+.bath{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid:bathrooms;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid:location;
+}
+
+
+.area_a2{
+    border: 3px solid rgb(255, 214, 63);
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: medium;
+    text-transform: lowercase;
+    height: 40px;
+    background: rgb(255, 214, 63);
+    color: rgb(97, 87, 0);
+
+}
+
+
+
+.option_field{
+    border-radius: 20px;
+    font-size: medium;
+    text-transform: capitalize;
+    color: rgb(97, 87, 0);
+    height: 40px;
+    width: 150px;
+    background: rgb(255, 214, 63);
+    border: 3px solid rgb(255, 214, 63);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+
+input[type="text"]::placeholder{
+    color: rgb(97, 87, 0);
+}
+
+.radio_bed{
+    background-color: rgb(255, 214, 63);
+    display: inline-flex;
+    height: 50px;
+    width: 250px;
+    border-radius: 40px;
+}
+
+.inner_radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.one,.two,.three,.four,.five{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: rgb(97, 87, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:900;
+    font-size: large;
+}
+
+.one{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.five{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input:checked + label{
+    background-color: rgb(170, 133, 0);
+
+}
+
+.btn_container{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.find_btn{
+    color: rgb(97, 87, 0);
+    background-color: rgb(255, 214, 63);
+    height: 50px;
+    width: 100px;
+    border: 2px solid rgb(255, 214, 63);
+    border-radius:20px ;
+    font-weight:900;
+    font-size: large;
+}
+
+
+
+
+
+.footer_class{
+    background-color: rgb(255, 214, 63);
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    color:rgb(156, 156, 156);
+}
